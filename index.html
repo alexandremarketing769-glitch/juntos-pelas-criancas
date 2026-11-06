@@ -4,82 +4,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14583d">
 <title>Juntos pelas Crianças ❤️</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5faf6;color:#20352a}
-header{background:#14583d;color:white;text-align:center;padding:45px 20px}
-h1{font-size:35px}
-main{max-width:700px;margin:25px auto;padding:15px}
-.card{background:white;padding:23px;border-radius:18px;margin-bottom:20px;box-shadow:0 4px 15px #0000000c}
-h2{color:#14583d}
-.meta{font-size:32px;font-weight:bold;color:#14583d}
-button{background:#14583d;color:white;border:0;padding:15px;border-radius:10px;width:100%;font-size:16px;font-weight:bold}
-.pix{background:#eaf5ee;padding:15px;border-radius:10px;overflow-wrap:anywhere}
-small{color:#64736a}
-footer{text-align:center;background:#14583d;color:white;padding:25px}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f8f5;color:#20352a;line-height:1.6}
+.hero{min-height:460px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:60px 20px;background:linear-gradient(90deg,#092f22dd,#092f2270),url('https://images.unsplash.com/photo-1706645740905-efe7e3548407?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero div{max-width:700px}
+h1{font-size:clamp(38px,7vw,60px);line-height:1.1}
+.hero p{font-size:18px}
+.cta{display:inline-block;background:#f5c66a;color:#263b2d;text-decoration:none;padding:14px 25px;border-radius:12px;font-weight:bold}
+main{max-width:950px;margin:-30px auto 45px;padding:0 16px;position:relative}
+.card{background:white;padding:28px;border-radius:18px;margin-bottom:20px;box-shadow:0 8px 30px #173d2810}
+h2{color:#14583d;margin-top:0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+.stat{background:#e9f5ed;padding:18px;border-radius:14px}
+.stat strong{display:block;font-size:29px;color:#14583d}
+.stat span{font-size:13px}
+.progress{height:13px;background:#e7eee8;border-radius:20px;overflow:hidden}
+.progress span{display:block;width:15%;height:100%;background:#26945d}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:13px}
+.caption{font-size:12px;color:#68766d}
+.pix{background:#eff7f1;padding:18px;border:1px dashed #9bbda5;border-radius:14px;overflow-wrap:anywhere}
+button{background:#14583d;color:white;border:0;padding:16px;border-radius:11px;width:100%;font-size:16px;font-weight:bold;margin-top:14px;cursor:pointer}
+footer{background:#0d3828;color:white;text-align:center;padding:28px}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<header>
-<h1>❤️ Juntos pelas Crianças</h1>
-<p>Uma doação pode transformar uma infância.</p>
+
+<header class="hero">
+<div>
+<p>❤️ CAMPANHA SOLIDÁRIA</p>
+<h1>Juntos pelas Crianças</h1>
+<p>Uma doação pode ajudar a transformar o dia a dia de uma criança. Faça parte dessa corrente de solidariedade!</p>
+<a class="cta" href="#doar">QUERO AJUDAR ❤️</a>
+</div>
 </header>
 
 <main>
-<div class="card">
-<h2>Nossa missão</h2>
-<p>Uma campanha solidária para apoiar crianças em situação de vulnerabilidade, com alimentação, roupas, brinquedos, materiais escolares, cestas básicas e produtos de higiene.</p>
+
+<section class="card">
+<h2>❤️ Nossa missão</h2>
+<p>Uma campanha solidária para apoiar crianças em situação de vulnerabilidade, contribuindo com alimentação, roupas, brinquedos, materiais escolares, cestas básicas e produtos de higiene.</p>
+</section>
+
+<section class="card">
+<h2>Já arrecadamos mais de R$ 3 mil! 💚</h2>
+<p>Obrigado a todos que já contribuíram! Os mais de R$ 3.000,00 recebidos foram conferidos. Agora queremos chegar ainda mais longe!</p>
+
+<div class="stats">
+<div class="stat">
+<strong>R$ 3.000+</strong>
+<span>Recebidos e conferidos</span>
+</div>
+<div class="stat">
+<strong>R$ 20.000</strong>
+<span>Meta da campanha</span>
+</div>
 </div>
 
-<div class="card">
-<h2>Nossa meta</h2>
-<div class="meta">R$ 20.000,00</div>
-<p>Meta de arrecadação da campanha.</p>
-<p>O total arrecadado será divulgado após conferência dos recebimentos.</p>
-</div>
+<p><b>Progresso mínimo: 15% da meta</b></p>
+<div class="progress"><span></span></div>
+<p class="caption">O percentual será atualizado conforme os novos recebimentos forem conferidos.</p>
+</section>
 
-<div class="card">
+<section class="card">
+<h2>Conheça nossa causa ❤️</h2>
+<p>Cada contribuição fortalece essa iniciativa e ajuda a levar apoio a quem precisa.</p>
+
+<div class="gallery">
+<div>
+<img src="https://images.unsplash.com/photo-1706645740905-efe7e3548407?auto=format&fit=crop&w=900&q=80" alt="Crianças reunidas" loading="lazy">
+<p class="caption">Imagem ilustrativa.</p>
+</div>
+<div>
+<img src="https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?auto=format&fit=crop&w=900&q=80" alt="Crianças brincando" loading="lazy">
+<p class="caption">Imagem ilustrativa.</p>
+</div>
+</div>
+<p class="caption">As imagens são ilustrativas e não representam necessariamente as crianças atendidas pela campanha.</p>
+</section>
+
+<section class="card">
 <h2>Quem organiza</h2>
 <p><b>Organizador:</b> Fernando Marinho de Santos</p>
 <p><b>Titular da conta Pix:</b> Alexandre da Silva Carrias</p>
 <p>As doações serão destinadas às finalidades descritas nesta campanha, com prestação de contas e comprovantes.</p>
-</div>
+</section>
 
-<div class="card">
-<h2>❤️ Faça sua doação</h2>
-<p>Contribua pelo Pix. Confira o nome do favorecido no aplicativo do seu banco antes de confirmar.</p>
+<section class="card" id="doar">
+<h2>Faça sua doação 💚</h2>
+<p>Qualquer contribuição é bem-vinda! Copie a chave Pix e confira o nome do favorecido no aplicativo do banco antes de confirmar.</p>
+
 <div class="pix">
 <b>Chave Pix:</b>
 <p id="chave">ee2962df-1483-4e65-b7bc-6cd8b39442be</p>
 <b>Favorecido: Alexandre da Silva Carrias</b>
 </div>
-<br>
-<button onclick="copiarPix()">COPIAR CHAVE PIX</button>
-<p id="mensagem"></p>
-</div>
 
-<div class="card">
+<button onclick="copiarPix()">COPIAR CHAVE PIX</button>
+<p id="mensagem" aria-live="polite"></p>
+</section>
+
+<section class="card">
 <h2>Prestação de contas</h2>
-<p>Os valores recebidos e utilizados serão informados com base em comprovantes reais.</p>
-<p><b>Total recebido:</b> A atualizar.</p>
-<p><b>Total utilizado:</b> A atualizar.</p>
-</div>
+<p><b>Total recebido:</b> Mais de R$ 3.000,00 (conferidos).</p>
+<p><b>Total utilizado:</b> A informar após apuração dos comprovantes.</p>
+<p>Novas atualizações serão publicadas conforme os valores forem conferidos.</p>
+</section>
+
 </main>
 
 <footer>
-<p>Juntos pelas Crianças ❤️</p>
+<h3>Juntos pelas Crianças ❤️</h3>
 <p>Solidariedade com transparência e responsabilidade.</p>
 </footer>
 
 <script>
 function copiarPix(){
 const chave=document.getElementById("chave").innerText;
+const mensagem=document.getElementById("mensagem");
+
+if(navigator.clipboard && window.isSecureContext){
 navigator.clipboard.writeText(chave).then(()=>{
-document.getElementById("mensagem").innerText="Chave Pix copiada! Confira o favorecido no banco.";
+mensagem.innerText="Chave Pix copiada! Confira o favorecido no banco.";
 }).catch(()=>{
-document.getElementById("mensagem").innerText="Selecione e copie a chave Pix manualmente.";
+mensagem.innerText="Selecione e copie a chave manualmente.";
 });
+}else{
+const campo=document.createElement("textarea");
+campo.value=chave;
+document.body.appendChild(campo);
+campo.select();
+try{
+document.execCommand("copy");
+mensagem.innerText="Chave Pix copiada! Confira o favorecido no banco.";
+}catch(e){
+mensagem.innerText="Selecione e copie a chave manualmente.";
+}
+campo.remove();
+}
 }
 </script>
 </body>
