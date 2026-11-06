@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juntos pelas Crianças ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5faf6;color:#20352a}
+header{background:#14583d;color:white;text-align:center;padding:45px 20px}
+h1{font-size:35px}
+main{max-width:700px;margin:25px auto;padding:15px}
+.card{background:white;padding:23px;border-radius:18px;margin-bottom:20px;box-shadow:0 4px 15px #0000000c}
+h2{color:#14583d}
+.meta{font-size:32px;font-weight:bold;color:#14583d}
+button{background:#14583d;color:white;border:0;padding:15px;border-radius:10px;width:100%;font-size:16px;font-weight:bold}
+.pix{background:#eaf5ee;padding:15px;border-radius:10px;overflow-wrap:anywhere}
+small{color:#64736a}
+footer{text-align:center;background:#14583d;color:white;padding:25px}
+</style>
+</head>
+<body>
+<header>
+<h1>❤️ Juntos pelas Crianças</h1>
+<p>Uma doação pode transformar uma infância.</p>
+</header>
+
+<main>
+<div class="card">
+<h2>Nossa missão</h2>
+<p>Uma campanha solidária para apoiar crianças em situação de vulnerabilidade, com alimentação, roupas, brinquedos, materiais escolares, cestas básicas e produtos de higiene.</p>
+</div>
+
+<div class="card">
+<h2>Nossa meta</h2>
+<div class="meta">R$ 20.000,00</div>
+<p>Meta de arrecadação da campanha.</p>
+<p>O total arrecadado será divulgado após conferência dos recebimentos.</p>
+</div>
+
+<div class="card">
+<h2>Quem organiza</h2>
+<p><b>Organizador:</b> Fernando Marinho de Santos</p>
+<p><b>Titular da conta Pix:</b> Alexandre da Silva Carrias</p>
+<p>As doações serão destinadas às finalidades descritas nesta campanha, com prestação de contas e comprovantes.</p>
+</div>
+
+<div class="card">
+<h2>❤️ Faça sua doação</h2>
+<p>Contribua pelo Pix. Confira o nome do favorecido no aplicativo do seu banco antes de confirmar.</p>
+<div class="pix">
+<b>Chave Pix:</b>
+<p id="chave">ee2962df-1483-4e65-b7bc-6cd8b39442be</p>
+<b>Favorecido: Alexandre da Silva Carrias</b>
+</div>
+<br>
+<button onclick="copiarPix()">COPIAR CHAVE PIX</button>
+<p id="mensagem"></p>
+</div>
+
+<div class="card">
+<h2>Prestação de contas</h2>
+<p>Os valores recebidos e utilizados serão informados com base em comprovantes reais.</p>
+<p><b>Total recebido:</b> A atualizar.</p>
+<p><b>Total utilizado:</b> A atualizar.</p>
+</div>
+</main>
+
+<footer>
+<p>Juntos pelas Crianças ❤️</p>
+<p>Solidariedade com transparência e responsabilidade.</p>
+</footer>
+
+<script>
+function copiarPix(){
+const chave=document.getElementById("chave").innerText;
+navigator.clipboard.writeText(chave).then(()=>{
+document.getElementById("mensagem").innerText="Chave Pix copiada! Confira o favorecido no banco.";
+}).catch(()=>{
+document.getElementById("mensagem").innerText="Selecione e copie a chave Pix manualmente.";
+});
+}
+</script>
+</body>
+</html>
